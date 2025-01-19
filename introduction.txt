@@ -1,0 +1,17 @@
+docker pull rabbitmq
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management
+http://localhost:15672/
+
+
+docker pull mongo:6.0.3
+docker run -d -p 28017:27017 mongo:6.0.3
+
+postgresSql
+https://www.youtube.com/watch?v=HPvpxzagsNg
+docker pull postgres
+docker run --name postgres -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -d postgres
+
+
+npm install --save dotenv
+npm install --save @nestjs/typeorm typeorm pg
+npm i @nestjs/config
